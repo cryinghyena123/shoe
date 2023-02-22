@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Hi
+<br>
+
+Welcome to shoes app
+
+<form th:action ="@{/users}">
+<label>Enter ID</label>
+<input type = "text" name = "id">
+<br>
+<label>Enter pass</label>
+<input type = "password" name = "pass">
+
+<br>
+<input type = submit>
+
+
+
+
+</form>
+<br>
+
+
+
+
+
+<a th:href = "@{/users/new}"> ADD User</a>
+
+</body>
+</html>

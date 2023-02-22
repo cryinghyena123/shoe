@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action ="@{/users}" th:object = "${user}" method = "POST">
+
+<label>
+Enter FirstName
+</label>
+<input type = "text" 
+name = "firstname" 
+th:field = "*{firstname}"
+/>
+
+<label>
+Enter LastName
+</label>
+<input type = "text" 
+name = "lastname" 
+th:field = "*{lastname}"
+/>
+
+<label>
+Enter Email
+</label>
+<input type = "text" 
+name = "email" 
+th:field = "*{email}"
+/>
+<input type = "submit">
+</form> 
+</body>
+</html>
